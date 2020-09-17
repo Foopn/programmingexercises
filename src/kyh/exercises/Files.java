@@ -1,4 +1,4 @@
-package com.company;
+package kyh.exercises;
 
 import java.io.File;
 

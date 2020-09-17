@@ -1,4 +1,4 @@
-package com.company;
+package kyh.exercises;
 
 public class SearchlastString {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.company;
+package kyh.exercises;
 
 public class StringReverse {
     public static String reverse(String in) {
