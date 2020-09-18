@@ -1,4 +1,4 @@
-package kyh.exercises;
+package kyh.exercises.lecture3;
 
 public class SearchlastString {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package kyh.exercises;
+package kyh.exercises.lecture3;
 
 public class RepeatWithErrors {
     /* Detta program ska be användaren att skriva in en text, sedan skriva ut det på skärmen flera gånger.

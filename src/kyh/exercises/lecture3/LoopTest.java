@@ -1,4 +1,4 @@
-package kyh.exercises;
+package kyh.exercises.lecture3;
 
 import java.util.Scanner;
 

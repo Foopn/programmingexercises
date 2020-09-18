@@ -1,4 +1,4 @@
-package kyh.exercises;
+package kyh.exercises.lecture3;
 
 public class Hamlet {
     /* Relevant Javadoc:
