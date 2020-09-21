@@ -12,7 +12,7 @@ class Doctor {
             System.out.println("Dr. " + name + " tested patient " + patient.getName() + " positive for " + patient.getSickness() + ".");
             return patient.getSickness();
         } else {
-            System.out.println("Dr. " + name + " tested patient " + patient.getName() + " patient is healthy.");
+            System.out.println("Dr. " + name + " tested patient " + patient.getName() + ", patient is healthy.");
             return null;
         }
     }

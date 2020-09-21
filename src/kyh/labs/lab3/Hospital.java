@@ -25,7 +25,7 @@ public class Hospital {
         patients[4] = new Patient("Eschwar", "Epikondylit");
         patients[5] = new Patient("Fadel", "Förkylning");
         patients[6] = new Patient("Gunnar", "Gallsten");
-        patients[7] = new Patient("Helena", null);
+        patients[7] = new Patient("Helena");
         patients[8] = new Patient("Isabel", "Insomni");
         patients[9] = new Patient("Jinghua", "Järnbrist");
     }
