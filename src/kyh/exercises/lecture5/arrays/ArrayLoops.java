@@ -4,7 +4,7 @@ public class ArrayLoops {
 
     /*
     Övning 1:
-    - Skapa en ny array "numbers" med värdena:
+    - Skapa en ny array "cars" med värdena:
       "Ford", "Audi", "Skoda", "Volvo", "Chevrolet"
     - Gör en for-loop skriv ut alla värden på skärmen.
       "Place 0: Ford"
