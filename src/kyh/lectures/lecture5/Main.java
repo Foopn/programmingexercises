@@ -10,11 +10,17 @@ public class Main {
     public static String s2 = "Hej";
 
     public static void main(String[] args) {
-        MyInt j = new MyInt(5);
+        int[] ratings = new int[5];
+        ratings[0] = 100;
+        ratings[1] = 50;
+        System.out.println(ratings[0]);
+        System.out.println(ratings[1]);
+
+        /*MyInt j = new MyInt(5);
         MyInt i = new MyInt(5);
         String s = "Hej";
 
-        System.out.println(s2==s);
+        System.out.println(s2==s);*/
 
 
         /*Dog dog = new Dog("Axel", "Chihuahua");
@@ -22,6 +28,7 @@ public class Main {
         //dog.bark();
         Dog dog2 = new Dog("Clemens", "Saint Bernard");
         //dog2.bark();
-        dog.chase(dog2);*/
+        dog.chase(dog2);
+        System.out.println("Är det samma hund? " + dog.equals(dog));*/
     }
 }

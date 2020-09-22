@@ -29,4 +29,8 @@ public class Dog {
         this.bark();
         d.bark();
     }
+
+    public boolean equals(Dog d) {
+        return this.hashCode() == d.hashCode();
+    }
 }
