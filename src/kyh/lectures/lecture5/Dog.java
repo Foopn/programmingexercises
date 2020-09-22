@@ -1,28 +1,32 @@
 package kyh.lectures.lecture5;
 
 public class Dog {
-    String name;
-    String call = "Woof";
+    private String name;
+    private String call = "Woof";
+    private String breed;
 
-    Dog(String inputName) {
-        name = inputName;
+    Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+        if(breed.equals("Saint Bernard")) {
+            call = "AUGHRUFF!";
+        }
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String inputName) {
+    private void setName(String inputName) {
         name = inputName;
     }
 
-    public void bark() {
+    private void bark() {
         System.out.println(name + ": " + call);
     }
 
-    public static void main(String[] args) {
-        Dog dog = new Dog("Axel");
-        System.out.println("Hunden heter " + dog.getName());
-        dog.bark();
+    public void chase(Dog d) {
+        this.bark();
+        d.bark();
     }
 }
