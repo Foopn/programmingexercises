@@ -1,11 +1,15 @@
 package kyh.lectures.lecture5;
 
-public class Animal {
-    public String name;
-    public String sound;
+public abstract class Animal {
+    protected String name;
+    protected String sound;
 
     public Animal(String name) {
         this.name = name;
+    }
+
+    protected int calculateSpeed() {
+        return name.length()*5;
     }
 
     public String getName() {

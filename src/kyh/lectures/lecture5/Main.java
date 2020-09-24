@@ -38,7 +38,11 @@ public class Main {
         //cat.printSound();
         //System.out.println(cat.getName());
         Chicken chicken = new Chicken("Alexander");
+
+        Animal animal = new Cat("Pippi");
+
         chicken.printSound();
-        chicken.getName();
+        System.out.println(chicken.getName());
+        System.out.println(cat.getName());
     }
 }
