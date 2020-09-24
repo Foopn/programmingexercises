@@ -26,7 +26,7 @@ public class Dog {
     }
 
     public Date getBirthDate() {
-        return this.birthDate;
+        return birthDate;
     }
 
     public Date getAge() {
