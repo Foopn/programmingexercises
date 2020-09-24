@@ -24,13 +24,14 @@ public class Main {
         System.out.println(s2==s);*/
 
 
-        Dog dog = new Dog("Axel", "Chihuahua", new Date());
+        Dog dog = new Dog("Axel", "Chihuahua");
         //System.out.println("Hunden heter " + dog.getName());
         //dog.bark();
-        Dog dog2 = new Dog("Clemens", "Saint Bernard", new Date(119, 8, 20));
-        //dog2.bark();
-        dog.chase(dog2);
-        System.out.println("Är det samma hund? " + dog.equals(dog));
-        System.out.println(dog2.getBirthDate());
+        Dog dog2 = new Dog("Clemens", "Saint Bernard", new Date(118, 8, 20));
+        dog2.bark();
+        //dog.chase(dog2);
+        /*System.out.println("Är det samma hund? " + dog.equals(dog));
+        System.out.println(dog2.getAge());
+        System.out.println(Dog.convertHumanYearsToDogYears(33));*/
     }
 }
