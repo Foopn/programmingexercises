@@ -6,8 +6,7 @@ import java.time.Period;
 import java.time.ZoneId;
 import java.util.Date;
 
-public class Dog {
-    private String name;
+public class Dog extends Animal {
     private String call = "Woof";
     private String breed;
     private Date birthDate;
@@ -23,20 +22,7 @@ public class Dog {
     }
 
     public Dog(String name, String breed) {
-        this.name = name;
-        this.breed = breed;
-        if(breed.equals("Saint Bernard")) {
-            call = "AUGHRUFF!";
-        }
-        this.birthDate = new Date();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    private void setName(String inputName) {
-        name = inputName;
+        this(name, breed, new Date());
     }
 
     public Date getBirthDate() {
@@ -51,8 +37,12 @@ public class Dog {
         return result.getYears() + " " + result.getMonths() + " " + result.getDays();
     }
 
+    public void bark(String message) {
+        System.out.println(name + ": " + message);
+    }
+
     public void bark() {
-        System.out.println(name + ": " + call);
+        bark(call);
     }
 
     public void chase(Dog d) {

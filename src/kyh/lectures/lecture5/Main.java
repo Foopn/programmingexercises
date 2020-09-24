@@ -29,9 +29,12 @@ public class Main {
         //dog.bark();
         Dog dog2 = new Dog("Clemens", "Saint Bernard", new Date(118, 8, 20));
         dog2.bark();
+        dog2.bark("Hello im a dog!");
         //dog.chase(dog2);
         /*System.out.println("Är det samma hund? " + dog.equals(dog));
         System.out.println(dog2.getAge());
         System.out.println(Dog.convertHumanYearsToDogYears(33));*/
+        Cat cat = new Cat("El Gato");
+        System.out.println(cat.getName());
     }
 }
