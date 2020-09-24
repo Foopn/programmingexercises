@@ -30,7 +30,7 @@ public class Dog {
     }
 
     public Date getAge() {
-        return new Date();
+        return null;
     }
 
     private void bark() {
