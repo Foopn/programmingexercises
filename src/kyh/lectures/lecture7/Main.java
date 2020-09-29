@@ -3,6 +3,7 @@ package kyh.lectures.lecture7;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.zip.DataFormatException;
 
 public class Main {
 
@@ -37,7 +38,7 @@ public class Main {
         //System.out.println(diceRoll);
 
 
-        try {
+        /*try {
             readFile();
         } catch(IllegalArgumentException e) {
             System.err.println("Input a number larger than 0");
@@ -45,6 +46,18 @@ public class Main {
             System.err.println("Input a number larger than 0");
         } catch(Exception e) {
             System.err.println("Something else went wrong");
+        }*/
+
+        try {
+            Scanner sc = new Scanner(System.in);
+            String input = sc.next();
+            if(input.equals("Hello")) {
+                throw new NotHelloException("This is an error");
+            }
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
         }
+
+
     }
 }
