@@ -3,8 +3,18 @@ package kyh.lectures.lecture8;
 import java.util.Scanner;
 
 public class Calculator {
+    public int memory = 0;
+
     public int add(int a, int b) {
         return a+b;
+    }
+
+    public void saveToMemory(int a) {
+        this.memory = a;
+    }
+
+    public int recallMemory() {
+        return this.memory;
     }
 
     public int subtract(int a, int b) {
@@ -37,5 +47,12 @@ public class Calculator {
                 System.out.println("The method of calculation is not supported yet");
             }
         }
+    }
+
+    public int max(int a, int b) {
+        if(a > b) {
+            return a;
+        }
+        return b;
     }
 }
