@@ -2,6 +2,7 @@ package kyh.lectures.lecture7;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.zip.DataFormatException;
 
@@ -19,6 +20,10 @@ public class Main {
                 }
             }
         }
+    }
+
+    public static void test(Scanner sc){
+        System.out.println(sc.next());
     }
 
     public static void main(String[] args) {
@@ -48,15 +53,19 @@ public class Main {
             System.err.println("Something else went wrong");
         }*/
 
-        try {
-            Scanner sc = new Scanner(System.in);
+
+
+        //try {
+            test(null);
+            /*canner sc = new Scanner(System.in);
             String input = sc.next();
             if(input.equals("Hello")) {
-                throw new NotHelloException("This is an error");
+                throw new Exception("This is an error");
             }
-        } catch(Exception e) {
+            Exception ex = new NotHelloException("");*/
+        /*} catch(Exception e) {
             System.out.println(e.getMessage());
-        }
+        }*/
 
 
     }
