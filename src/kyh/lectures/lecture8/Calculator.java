@@ -23,6 +23,5 @@ public class Calculator {
                 System.out.println("The method of calculation is not supported yet");
             }
         }
-
     }
 }
