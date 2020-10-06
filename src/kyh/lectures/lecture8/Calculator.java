@@ -44,7 +44,7 @@ public class Calculator {
             } else if (method.equals("*")) {
                 System.out.println("The answer is: " + calc.multiply(a, b));
             } else {
-                System.out.println("The method of calculation is not supported yet");
+                calc.throwException();
             }
         }
     }
@@ -54,5 +54,9 @@ public class Calculator {
             return a;
         }
         return b;
+    }
+
+    public void throwException() {
+        throw new IllegalArgumentException("The method of calculation is not supported yet");
     }
 }

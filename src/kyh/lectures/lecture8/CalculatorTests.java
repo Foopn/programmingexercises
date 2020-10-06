@@ -60,5 +60,10 @@ public class CalculatorTests {
         assertEquals(100001, calculator.max(100000, 100001));
     }
 
-
+    @Test
+    @DisplayName("Testing that exception is thrown")
+    void throwException() {
+        Calculator calc = new Calculator();
+        assertThrows(IllegalArgumentException.class, () -> calc.throwException());
+    }
 }
