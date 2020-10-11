@@ -2,6 +2,7 @@ package kyh.lectures.lecture5;
 
 import java.util.Date;
 import java.util.Scanner;
+import kyh.lectures.lecture10.Person;
 
 public class Main {
     public static void resetInt(MyInt i) {
@@ -44,5 +45,6 @@ public class Main {
         chicken.printSound();
         System.out.println(chicken.getName());
         System.out.println(cat.getName());
+        Person p = new Person(1000);
     }
 }
