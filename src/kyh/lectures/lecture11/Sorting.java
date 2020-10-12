@@ -11,7 +11,13 @@ public class Sorting {
     }
 
     public static void sort(List<Integer> list) {
-
+        for(int i=0; i<list.size(); i++) {
+            for(int j=i; j<list.size(); j++) {
+                if(list.get(j) > list.get(i)) {
+                    swap(list, i, j);
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
