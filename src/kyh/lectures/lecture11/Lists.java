@@ -1,6 +1,8 @@
 package kyh.lectures.lecture11;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Lists {
@@ -29,8 +31,10 @@ public class Lists {
         }
     }
 
-    public static List swap(List l, int i, int j) {
-
+    public static void swap(List<String> l, int i, int j) {
+        String tmp = l.get(i);
+        l.set(i, l.get(j));
+        l.set(j, tmp);
     }
 
 
@@ -41,7 +45,7 @@ public class Lists {
         colors.add("Green");
         colors.add("Yellow");
         colors.add("Purple");
-        swap(colors, 3, 4)
+        swap(colors, 3, 4);
         for(String color: colors) {
             System.out.println(color);
         }
