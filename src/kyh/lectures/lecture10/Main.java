@@ -59,13 +59,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        try {
             new Main();
-        } catch(IllegalArgumentException | NoSuchMethodException e) {
-
-        } catch(NoSuchMethodException e) {
-
-        }
 
 
 
