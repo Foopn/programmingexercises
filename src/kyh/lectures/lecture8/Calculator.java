@@ -5,6 +5,13 @@ import java.util.Scanner;
 public class Calculator {
     public int memory = 0;
 
+    public Calculator() {
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNext()) {
+
+        }
+    }
+
     public int add(int a, int b) {
         return a+b;
     }

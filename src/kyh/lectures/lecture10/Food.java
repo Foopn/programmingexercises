@@ -1,5 +1,5 @@
 package kyh.lectures.lecture10;
 
-public interface Food {
+public interface  Food {
     int getNumberOfCalories();
 }

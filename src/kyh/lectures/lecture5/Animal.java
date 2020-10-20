@@ -1,11 +1,16 @@
 package kyh.lectures.lecture5;
 
-public abstract class Animal {
+public class Animal {
     protected String name;
     protected String sound;
 
-    public Animal(String name) {
+    public Animal(String name, String sound) {
         this.name = name;
+        this.sound = sound;
+    }
+
+    public Animal(String name) {
+        this(name, "LÄTE!");
     }
 
     protected int calculateSpeed() {
@@ -22,5 +27,9 @@ public abstract class Animal {
 
     public void printSound() {
         System.out.println(name + ": " + sound);
+    }
+
+    public final void printRunning() {
+        System.out.println("I'm running");
     }
 }

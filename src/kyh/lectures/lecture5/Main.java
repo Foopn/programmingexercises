@@ -11,6 +11,10 @@ public class Main {
 
     public static String s2 = "Hej";
 
+    public static void printSound(Animal a) {
+        a.printSound();
+    }
+
     public static void main(String[] args) {
        /* int[] ratings = new int[5];
         ratings[0] = 100;
@@ -22,13 +26,16 @@ public class Main {
         MyInt i = new MyInt(5);
         String s = "Hej";
 
-        System.out.println(s2==s);*/
-
+        System.out.println(s2==s);*/;
+        Animal giraff = new Animal("Långhals", "MÖÖÖL!");
 
         Dog dog = new Dog("Axel", "Chihuahua");
         //System.out.println("Hunden heter " + dog.getName());
         //dog.bark();
         Dog dog2 = new Dog("Clemens", "Saint Bernard", new Date(118, 8, 20));
+
+        printSound(dog2);
+
         //dog2.bark();
         //dog2.bark("Hello im a dog!");
         //dog.chase(dog2);
@@ -38,13 +45,16 @@ public class Main {
         Cat cat = new Cat("El Gato");
         //cat.printSound();
         //System.out.println(cat.getName());
-        Chicken chicken = new Chicken("Alexander");
+        final Chicken chicken = new Chicken("Alexander");
 
         Animal animal = new Cat("Pippi");
 
-        chicken.printSound();
+        //chicken.printSound();
         System.out.println(chicken.getName());
-        System.out.println(cat.getName());
-        Person p = new Person(1000);
+        chicken.setName("Peter");
+        System.out.println(chicken.getName());
+
+        //System.out.println(cat.getName());
+        //Person p = new Person(1000);
     }
 }

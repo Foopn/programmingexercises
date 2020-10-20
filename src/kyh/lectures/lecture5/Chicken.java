@@ -2,7 +2,7 @@ package kyh.lectures.lecture5;
 
 public class Chicken extends Animal {
     public Chicken(String name) {
-        super(name);
+        super(name, "CHAAA!");
     }
 
     public String getName() {

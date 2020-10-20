@@ -13,7 +13,7 @@ public class Dog extends Animal {
     private static int conversionRateForDogYears = 7;
 
     public Dog(String name, String breed, Date birthDate) {
-        super(name);
+        super(name, "Woof");
         this.breed = breed;
         if(breed.equals("Saint Bernard")) {
             call = "AUGHRUFF!";

@@ -83,7 +83,7 @@ public class Main {
         Main m2 = new Main();
         System.out.println(m1.equals(m2));*/
 
-        /*Person p1 = new Person(2500);
+        Person p1 = new Person(2500);
         Person p2 = new Person(2500);
         //p1.eat(new Broccoli());
         //p1.eat(new Pizza());
@@ -103,6 +103,6 @@ public class Main {
         p2.printEatenCaloriesToday();
         p1.printEatenCaloriesToday();
 
-        System.out.println("InstanceOf: " + (p1 instanceof Object));*/
+        System.out.println("InstanceOf: " + (p1 instanceof Object));
     }
 }

@@ -153,7 +153,6 @@ public class Streams {
         // ----------------------------------------------
 
         /* Map-Reduce */
-
         System.out.println("\nMap-reduce");
         int mapReduceSum = intList
                 .parallelStream()
