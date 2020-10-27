@@ -64,24 +64,14 @@ public class Main {
     }
 
     public static String toPirateLang(String inText) {
-        // Givet "Hello", returnera "HOHelollolo"
-
         StringBuilder resultStr = new StringBuilder();
 
-        // Vilka är konsonanter, eller vokaler?
         for (int i=0; i < inText.length() ; i++) {
-            // Tar ut bokstraven
             char c = inText.charAt(i);
 
             if (isVowel(c)) {
-                // Vid vokal: Lägg till på resultatet
                 resultStr.append(c);
             } else {
-                // Konvertera konsonant till rövarspråk
-                // -- Skriv ut konsonanten
-                // -- Skriv ut ett "o"
-                // -- Skriv ut konsonanten igen
-
                 resultStr.append(c);
 
                 boolean isUpper = Character.isUpperCase(c);
